@@ -45,6 +45,14 @@ exports.getHadithById = async (req, res) => {
   }
 }
 
+exports.search = async (req, res) => {
+  const searchValue =  req.params.searchValue;
+  console.log(searchValue)
+  await Hadith.find({bosnianTitle: /^djela/}).then((hadiths) => {
+    res.json(hadiths);
+  })
+}
+
 
 exports.deleteHadith = async (req, res) => {
   try{

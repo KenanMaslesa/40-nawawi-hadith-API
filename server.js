@@ -3,6 +3,7 @@ const express = require('express');
 const connectDB = require('./config/db')
 const app = express();
 const bodyParser= require('body-parser');
+const path = require('path')
 
 //Conect DB
 connectDB();
@@ -22,6 +23,9 @@ app.use(bodyParser.json());
 
 //Define Routes
 app.use('/api/hadith', require('./routes/hadith'))
+
+//Define static folder for images, audio.. so we can access it directly: http://localhost:5000/static/assets/audio/nawawi03.mp3
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 5000;
 
