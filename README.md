@@ -1,17 +1,15 @@
-GET ALL VIDEOS
-https://djecijikutak.herokuapp.com/api/videos
+GET ALL HADITHS
+https://nawawihadiths.herokuapp.com/api/hadith
 
-GET VIDEO BY ID
-https://djecijikutak.herokuapp.com/api/videos/616c45e8cb407a0972a546dd
+GET HADITH BY ID
+https://nawawihadiths.herokuapp.com/api/hadith/1
 
-ADD VIDEO (POST)
-https://djecijikutak.herokuapp.com/api/videos/add-video
+ADD HADITH (POST)
+https://djecijikutak.herokuapp.com/api/hadith/add-hadith
 
-DELETE VIDEO (DELETE)
-https://djecijikutak.herokuapp.com/api/videos/delete/616c51e853fa60c2af0bca8a
+DELETE HADITH (DELETE)
+https://djecijikutak.herokuapp.com/api/hadith/delete/1
 
-EDIT VIDEO (PUT)
-https://djecijikutak.herokuapp.com/api/videos/edit/616b5877594ccaf04e8ff016
+EDIT HADITH (PUT)
+https://djecijikutak.herokuapp.com/api/hadith/edit/2
 
-LOAD MORE (GET)
-https://djecijikutak.herokuapp.com/api/videos/load-more/0 -> 0 is page
