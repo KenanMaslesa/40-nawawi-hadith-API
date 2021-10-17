@@ -5,9 +5,9 @@ const hadithController = require('../controllers/hadith')
 
 //api/hadith
 router.get('/', hadithController.getHadiths);
-router.get('/:hadithId', hadithController.getHadithById);
+router.get('/:number', hadithController.getHadithById);
 router.post('/add-hadith', hadithController.addHadith);
-router.put('/edit/:hadithId', hadithController.editHadith);
-router.delete('/delete/:hadithId', hadithController.deleteHadith);
+router.put('/edit/:number', hadithController.editHadith);
+router.delete('/delete/:number', hadithController.deleteHadith);
 
 module.exports = router;
