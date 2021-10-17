@@ -1,7 +1,7 @@
 const Hadith = require('../models/Hadith')
 const mongoose = require('mongoose')
 
-exports.addVideo = async (req, res) => {
+exports.addHadith = async (req, res) => {
   try {
     const newHadith = new Hadith({
       _id: new mongoose.Types.ObjectId(),
