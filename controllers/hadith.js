@@ -48,7 +48,8 @@ exports.getHadithById = async (req, res) => {
 exports.search = async (req, res) => {
   const searchValue =  req.params.searchValue;
   console.log(searchValue)
-  await Hadith.find({bosnianTitle: /^djela/}).then((hadiths) => {
+  var query = {bosnianTitle: "Djela se vrednuju prema namjerama"}
+  await Hadith.find(query).then((hadiths) => {
     res.json(hadiths);
   })
 }

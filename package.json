@@ -1,7 +1,6 @@
 {
-  "name": "helloworld",
+  "name": "40nawawihadith-api",
   "version": "1.0.0",
-  "description": "prvi api",
   "main": "server.js",
   "scripts": {
     "start": "node server",
